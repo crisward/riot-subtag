@@ -37,3 +37,8 @@ describe "subtag",->
     opts = {tag:'tag2'}
     @tag = riot.mount(@domnode,'subtag',opts)[0]
     expect(window.hasunmounted).to.be.true
+
+  it "shouldn't go mental if no tag is set",->
+    opts = {}
+    @tag = riot.mount(@domnode,'subtag',opts)[0]
+    

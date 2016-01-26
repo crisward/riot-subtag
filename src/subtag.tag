@@ -5,6 +5,7 @@ subtag
     @prevtag = null
 
     @on 'mount',->
+      return if !opts.tag
       @prevtag = opts.tag
       @mountedTag = riot.mount(@root.querySelector('div'),opts.tag,opts)[0]
 
@@ -15,4 +16,4 @@ subtag
         @mountedTag = riot.mount(@root.querySelector('div'),opts.tag,opts)[0]
         
     @on 'unmount',->
-      @mountedTag.unmount(true)
+      @mountedTag.unmount(true) if @mountedTag
