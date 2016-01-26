@@ -1,6 +1,6 @@
 {
   "name": "riot-subtag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "like riot-tag, but dynamic",
   "main": "lib/subtag.js",
   "repository": "crisward/riot-subtag",
