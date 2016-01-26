@@ -1,4 +1,5 @@
 # Riot Subtag
+[![Build Status](https://travis-ci.org/crisward/riot-subtag.svg?branch=master)](https://travis-ci.org/crisward/riot-subtag)
 
 A very small tag to help fix a performance issue I had with Riot's if statement.
 It's much quick to use this tag, then change your tagname within your script.
