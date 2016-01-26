@@ -2,7 +2,7 @@
   "name": "riot-subtag",
   "version": "1.0.1",
   "description": "like riot-tag, but dynamic",
-  "main": "lib/routehandler.js",
+  "main": "lib/subtag.js",
   "repository": "crisward/riot-subtag",
   "scripts": {
     "test": "karma start",
