@@ -1,6 +1,6 @@
 {
   "name": "riot-subtag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "like riot-tag, but dynamic",
   "main": "lib/routehandler.js",
   "repository": "crisward/riot-subtag",
