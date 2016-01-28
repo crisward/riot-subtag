@@ -1,6 +1,7 @@
 # Riot Subtag
 [![Build Status](https://travis-ci.org/crisward/riot-subtag.svg?branch=master)](https://travis-ci.org/crisward/riot-subtag)
 [![Coverage Status](https://coveralls.io/repos/github/crisward/riot-subtag/badge.svg?branch=master)](https://coveralls.io/github/crisward/riot-subtag?branch=master)
+[![npm](https://img.shields.io/npm/dm/riot-subtag.svg)](https://www.npmjs.com/package/riot-subtag)
 
 A very small tag to help fix a performance issue I had with Riot's `if` attribute.
 It's much quicker to use this tag, then change your tagname within your script.
