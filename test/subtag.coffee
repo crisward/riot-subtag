@@ -6,13 +6,15 @@ require './sampletags.tag'
 describe "subtag",->
 
 
-  before ->
+  beforeEach ->
     @domnode = document.createElement('subtag')
     @node = document.body.appendChild(@domnode)
 
   after ->
     @domnode = ''
     @tag.unmount()
+    document.querySelector('subtag').remove()
+    
 
   it "should display tag1 outputing hello",->
     @tag = riot.mount(@domnode,'subtag',{tag:'tag1'})[0]
@@ -41,4 +43,11 @@ describe "subtag",->
   it "shouldn't go mental if no tag is set",->
     opts = {}
     @tag = riot.mount(@domnode,'subtag',opts)[0]
+    
+  it "should yield internal content",->
+    @domnode.innerHTML = "it yielded"
+    @tag = riot.mount(@domnode,'subtag',{tag:'tag4'})[0]
+    expect(document.body.textContent).to.contain('some content')
+    expect(document.body.textContent).to.contain('it yielded')
+    #console.log document.querySelectorAll('subtag')[4].innerHTML
     

@@ -15,3 +15,6 @@ tag3
       @hasmounted = "Mounted"
       window.hasunmounted = true
 
+tag4
+  p some content
+  <yield />

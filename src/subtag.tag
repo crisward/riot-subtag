@@ -1,6 +1,7 @@
 subtag
   div(riot-tag="{opts.tag}")
-
+    <yield />
+    
   script(type="text/coffee").
     @prevtag = null
 
