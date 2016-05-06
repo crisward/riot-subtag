@@ -1,4 +1,5 @@
-# Riot Subtag
+<img src="https://cdn.rawgit.com/crisward/riot-subtag/blob/master/subtag-logo.svg" height="140"/>
+
 [![Build Status](https://travis-ci.org/crisward/riot-subtag.svg?branch=master)](https://travis-ci.org/crisward/riot-subtag)
 [![Coverage Status](https://coveralls.io/repos/github/crisward/riot-subtag/badge.svg?branch=master)](https://coveralls.io/github/crisward/riot-subtag?branch=master)
 [![npm](https://img.shields.io/npm/dm/riot-subtag.svg)](https://www.npmjs.com/package/riot-subtag)
@@ -71,7 +72,10 @@ Subtag now yields its content.
 
 ```
 
+## Credit
 
+My noun project worship continues - check them out for
+cool creative commons logo ideas - [Noun Project](https://thenounproject.com/)
 
 ## License
 
