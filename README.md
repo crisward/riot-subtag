@@ -1,4 +1,4 @@
-<img src="https://cdn.rawgit.com/crisward/riot-subtag/blob/master/subtag-logo.svg" height="140"/>
+<img src="https://cdn.rawgit.com/crisward/riot-subtag/master/subtag-logo.svg" height="140"/>
 
 [![Build Status](https://travis-ci.org/crisward/riot-subtag.svg?branch=master)](https://travis-ci.org/crisward/riot-subtag)
 [![Coverage Status](https://coveralls.io/repos/github/crisward/riot-subtag/badge.svg?branch=master)](https://coveralls.io/github/crisward/riot-subtag?branch=master)
