@@ -18,3 +18,7 @@ tag3
 tag4
   p some content
   <yield />
+
+tag5
+  p more content
+  <yield />

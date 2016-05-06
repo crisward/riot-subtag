@@ -12,9 +12,7 @@ describe "subtag",->
 
   after ->
     @domnode = ''
-    @tag.unmount()
-    document.querySelector('subtag').remove()
-    
+    @tag.unmount()    
 
   it "should display tag1 outputing hello",->
     @tag = riot.mount(@domnode,'subtag',{tag:'tag1'})[0]
@@ -46,8 +44,11 @@ describe "subtag",->
     
   it "should yield internal content",->
     @domnode.innerHTML = "it yielded"
-    @tag = riot.mount(@domnode,'subtag',{tag:'tag4'})[0]
+    opts = {tag:'tag4'}
+    @tag = riot.mount(@domnode,'subtag',opts)[0]
     expect(document.body.textContent).to.contain('some content')
+    expect(document.body.textContent).to.contain('it yielded') 
+    opts.tag = 'tag5'
+    @tag.update()
     expect(document.body.textContent).to.contain('it yielded')
-    #console.log document.querySelectorAll('subtag')[4].innerHTML
     

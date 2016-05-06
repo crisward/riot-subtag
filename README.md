@@ -45,6 +45,31 @@ Any attributed added onto subtag will be passed down to your tag.
 If the tag attribute is updated, your old tag will have unmount called and your new tag
 will have mount called. You will have to run update after changing the tagname.
 
+## Yielding
+
+Subtag now yields its content.
+
+```html
+//your.tag
+
+<yourtag>
+  <subtag tag="{sometag}">Yield This</subtag>
+
+  <script>
+    @on('mount',function(){
+      if (somecondition==true){
+        this.subtag = "myh1"
+      }else{
+        this.subtag = "myh2"
+      }
+    })
+  </script>
+</youtag>
+
+<myh1><h1><yield /></h1></myh1>
+<myh2><h2><yield /></h2></myh2>
+
+```
 
 
 
