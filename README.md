@@ -72,6 +72,22 @@ Subtag now yields its content.
 
 ```
 
+## Options
+
+Subtag passes down options to your named tag
+
+```
+<yourtag>
+  <subtag tag="{othertag}" message="hello"></subtag>
+</youtag>
+
+<othertag>
+  <p>{opts.message}</p>
+</othertag>
+
+```
+
+
 ## Credit
 
 My noun project worship continues - check them out for

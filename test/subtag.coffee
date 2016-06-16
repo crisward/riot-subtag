@@ -51,4 +51,11 @@ describe "subtag",->
     opts.tag = 'tag5'
     @tag.update()
     expect(document.body.textContent).to.contain('it yielded')
-    
+
+  it "should update passed in opts when they change",->
+    opts = {tag:'tag6',message:"message1"}
+    @tag = riot.mount(@domnode,'subtag',opts)[0]
+    expect(document.body.textContent).to.contain('message1')
+    opts.message = "updated"
+    @tag.update()
+    expect(document.body.textContent).to.contain('updated')

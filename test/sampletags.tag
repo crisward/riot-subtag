@@ -22,3 +22,6 @@ tag4
 tag5
   p more content
   <yield />
+
+tag6
+  p {opts.message}
