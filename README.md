@@ -7,6 +7,15 @@
 A very small tag to help fix a performance issue I had with Riot's `if` attribute.
 It's much quicker to use this tag, then change your tagname within your script.
 
+**Note:**
+This is no longer required with riot 3.0.
+Simply use 
+
+```
+<div data-is="{yourtag}"></div>
+```
+
+Riot 2.* users, see below
 
 ## Installing
 
