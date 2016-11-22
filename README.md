@@ -11,8 +11,8 @@ It's much quicker to use this tag, then change your tagname within your script.
 This is no longer required with riot 3.0.
 Simply use 
 
-```
-<div data-is="{yourtag}"></div>
+```html
+<div data-is="{sometag}"></div>
 ```
 
 Riot 2.* users, see below
@@ -35,19 +35,19 @@ require('riot-subtag')
 ```html
 //your.tag
 
-<youtag>
+<yourtag>
   <subtag tag="{sometag}"></subtag>
 
   <script>
     @on('mount',function(){
       if (somecondition==true){
-        this.subtag = "onetag"
+        this.sometag = "onetag"
       }else{
-        this.subtag = "twotag"
+        this.sometag = "twotag"
       }
     })
   </script>
-</youtag>
+</yourtag>
 
 ```
 
